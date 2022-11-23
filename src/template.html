@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>The list of AWS service prefix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>The list of AWS service prefix</h1>
+
+    <div>
+      <p>
+        AWS service prefix is the namespace that identifies the AWS product.<br />
+        To learn more, see
+        <a
+          href="https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html"
+          >Actions, resources, and condition keys for AWS services</a
+        >
+        on the AWS document.
+      </p>
+    </div>
+
+    <table id="list-of-aws-service-prefix">
+      <thead>
+        <tr>
+          <th>Service Name</th>
+          <th>Service Prefix</th>
+          <th>Event Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% _.forEach(services, (service) => { %>
+        <tr>
+          <td><a href="<%- service.url %>"><%- service.name %></a></td>
+          <td><%- service.prefix %></td>
+          <td><%- service.prefix %>.amazonaws.com</td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>

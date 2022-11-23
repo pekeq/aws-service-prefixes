@@ -1,0 +1,23 @@
+[
+  { "name": "AWS Account Management", "prefix": "account" },
+  { "name": "AWS Activate", "prefix": "activate" },
+  { "name": "Alexa for Business", "prefix": "a4b" },
+  { "name": "AmazonMediaImport", "prefix": "mediaimport" },
+  { "name": "AWS Amplify", "prefix": "amplify" },
+  { "name": "AWS Amplify Admin", "prefix": "amplifybackend" },
+  { "name": "AWS Amplify UI Builder", "prefix": "amplifyuibuilder" },
+  {
+    "name": "Apache Kafka APIs for Amazon MSK clusters",
+    "prefix": "kafka-cluster"
+  },
+  { "name": "Amazon API Gateway", "prefix": "execute-api" },
+  { "name": "Amazon API Gateway Management", "prefix": "apigateway" },
+  { "name": "Amazon API Gateway Management V2", "prefix": "apigateway" },
+  { "name": "AWS App Mesh", "prefix": "appmesh" },
+  { "name": "AWS App Mesh Preview", "prefix": "appmesh-preview" },
+  { "name": "AWS App Runner", "prefix": "apprunner" },
+  { "name": "AWS App2Container", "prefix": "a2c" },
+  { "name": "AWS AppConfig", "prefix": "appconfig" },
+  { "name": "Amazon AppFlow", "prefix": "appflow" },
+  { "name": "Amazon AppIntegrations", "prefix": "app-integrations" }
+]
