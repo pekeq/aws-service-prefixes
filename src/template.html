@@ -7,6 +7,20 @@
       href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css"
       rel="stylesheet"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LKEQET3MF4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LKEQET3MF4");
+    </script>
   </head>
   <body>
     <h1>The list of AWS service prefix</h1>
@@ -33,7 +47,7 @@
       </thead>
       <tbody>
         <% _.forEach(services, (service) => { %>
-        <tr>
+        <tr id="<%- _.kebabCase(service.name) %>">
           <td><a href="<%- service.url %>"><%- service.name %></a></td>
           <td><%- service.prefix %></td>
           <td><%- service.prefix %>.amazonaws.com</td>
@@ -41,5 +55,13 @@
         <% }) %>
       </tbody>
     </table>
+
+    <footer>
+      <p>
+        Amazon Web Services, AWS, the Powered by AWS logo, and the
+        <a href="https://aws.amazon.com/trademark-guidelines/">AWS Marks</a> are
+        trademarks of Amazon.com, Inc. or its affiliates.
+      </p>
+    </footer>
   </body>
 </html>
